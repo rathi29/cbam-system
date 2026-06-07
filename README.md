@@ -135,3 +135,30 @@ streamlit run dashboard.py
 - **Feature Importance**: Which factors matter
 - **Anomaly Detection**: Find risky shipments
 - **Learning Curves**: Model improvement over time
+
+
+## 📁 Project Structure
+cbam-system/
+├── src/
+│   ├── database.py              # SQLite operations
+│   ├── utils.py                 # Mock data, validation
+│   ├── ml_forecaster.py         # XGBoost training & prediction
+│   ├── shap_explainer.py        # SHAP explanations
+│   ├── model_comparison.py      # Compare 3 models
+│   ├── cross_validation.py      # 5-fold validation
+│   ├── feature_importance.py    # Feature analysis
+│   ├── anomaly_detection.py     # IsolationForest
+│   ├── learning_curves.py       # Learning curve generation
+│   ├── time_series.py           # Trend forecasting
+│   ├── active_learner.py        # Uncertainty sampling
+│   └── bayesian_optimizer.py    # Hyperparameter tuning
+│
+├── dashboard.py                 # Main Streamlit app
+├── requirements.txt             # Python dependencies
+├── README.md                    # This file
+│
+├── data/
+│   └── carbon_ledger.db        # SQLite database (auto-created)
+│
+└── models/
+└── cbam_model.pkl          # Serialized XGBoost (auto-created)
