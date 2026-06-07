@@ -1,0 +1,9 @@
+pypdf
+requests
+scikit-learn
+pandas
+numpy
+streamlit
+xgboost
+shap
+scikit-optimize
